@@ -1,49 +1,231 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Simple Synchronised Carousel</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'><link rel="stylesheet" href="./style.css">
-
+    <title>АЗРФ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styleproject.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/jqery.js"></script>
+    <link rel="stylesheet" media="all" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src='/js/script.js'></script>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="gallery">
-  <h1>ФОТОГАЛЕРЕЯ</h1>
-<div class="section section-project">
-  <div class="project-carousel">
-    <div class="project-strip">
-      <div class="project"><img src="img/pic1.png"></div>
-      <div class="project"><img src="img/pic2.png"></div>
-      <div class="project"><img src="img/pic3.jpg"></div>
-      <div class="project"><img src="img/pic4.jpg"></div>
-      <div class="project"><img src="img/pic5.jpg"></div>
-      <div class="project"><img src="img/pic6.jpg"></div>
-      <div class="project"><img src="img/pic7.jpg"></div>
-      <div class="project"><img src="img/pic8.jpg"></div>
-      <div class="project"><img src="img/pic9.jpg"></div>
+<?php require 'lib.php'; ?>
+
+<div class="content row">
+    <div class="top">
+        <a href="#aboutus">
+            о АЗРФ
+        </a>
+        <a href="#map">
+            карта
+        </a>
+        <a href="#command">
+            команда
+        </a>
+        <a href="data.html">
+            данные по стратегиям
+        </a>
     </div>
-    <div class="project-screen">
-      <div class="project-detail">
-        <div class="project"><img src="img/pic1.png"></div>
-        <div class="project"><img src="img/pic2.png"></div>
-        <div class="project"><img src="img/pic3.jpg"></div>
-        <div class="project"><img src="img/pic4.jpg"></div>
-        <div class="project"><img src="img/pic5.jpg"></div>
-        <div class="project"><img src="img/pic6.jpg"></div>
-        <div class="project"><img src="img/pic7.jpg"></div>
-        <div class="project"><img src="img/pic8.jpg"></div>
-        <div class="project"><img src="img/pic9.jpg"></div>
-      </div>
-      <div class="screen-frame"></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="bac1 carousel-item active">
+
+                <div class="zagolovok">
+                    <h1><span style="color: white">АРКТИЧЕСКАЯ ЗОНА</span> <br> РОССИЙСКОЙ <span
+                                class="fed">ФЕДЕРАЦИИ</span>
+                    </h1>
+                    <h2>
+                        КРУПНЕЙШАЯ БАЗА ДАННЫХ
+                    </h2>
+                </div>
+            </div>
+            <div class="bac2 carousel-item">
+                <div class="zagolovok">
+                    <h1>ЕНИСЕЙСКАЯ СИБИРЬ</h1>
+                    <h2>
+                        КРУПНЕЙШАЯ БАЗА ДАННЫХ
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev"  style="background: none"href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" style="background: none" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-  </div>
 </div>
-<!-- partial -->
+<div class="aboutus row">
+    <div class="col-md-6 col-sm-12">
+        <div class="decor">
+            <img src="img/Group 6.png">
+        </div>
+        <a name="aboutus"><h1>НАША МИССИЯ</h1> </a>
+        <p class="fadeInDown wow">
+            Мы собрали сервис для обеспечения и хранения Базы Данных, чтобы была возможность получить данные по всем
+            необходимым запросам. Мы сократили избыточные и дублированные данные и обеспечили целостность базы
+            данных.Мы
+            выявили понятную модель отчета для пользователя, который не сталкивался с большими базами данных ранее.
+
+        </p>
+
+    </div>
+    <div class="picture col-md-6 col-sm-12">
+        <img src="img/sea.png">
+    </div>
 </div>
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script><script  src="./script.js"></script>
+<div class="tab-frame">
+    <div class="info">
+        <input type="radio" checked name="tab" id="tab1">
+        <label for="tab1">Енисейская Сибирь</label>
+
+        <input type="radio" name="tab" id="tab2">
+        <label for="tab2">Арктическая зона</label>
+
+        <div class="tab11">
+            <div class="aboutarctic">
+                <h1> о Енисейской Сибири</h1>
+                <p>Енисейская Сибирь – это три региона, расположенные по берегам Енисея: Красноярский край, Республика
+                    Хакасия и Республика Тыва. Регионы объединяет не только географическая близость, но и общность
+                    истории, культуры, традиций, а также уникальный ландшафт и единственные в своем роде памятники
+                    природы, которые являются достоянием всех, кто живет в Енисейской Сибири.
+                </p>
+            </div>
+        </div>
+        <div class="tab22">
+            <div class="aboutarctic">
+                <h1> об Арктической зоне</h1>
+                <p>Арктическая зона Российской Федерации (АЗРФ) – это северная оконечность Европейской и Азиатской
+                    частей РФ, расположена вдоль побережья морей Северного Ледовитого океана: Баренцева, Карского,
+                    Лаптевых, Восточно-Сибирского и Чукотского.
+                    Это самая протяженная морская граница России.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mapname">
+    <h1>ОПОРНЫЕ ЗОНЫ</h1>
+</div>
+    <a name="map"><div class="map"></a>
+    <div class="picture2">
+        <img src="img/map (2).png">
+    </div>
+        <div class="marker1"  data-title="Кольская опорная зона">
+        <img src="img/marker.png">
+            <p>1</p>
+        </div>
+    <div class="marker2"  data-title="Архангельская область">
+        <img src="img/marker.png">
+        <p>2</p>
+    </div>
+    <div class="marker3"  data-title="Ненецкая опорная зона">
+        <img src="img/marker.png">
+        <p>3</p>
+    </div>
+    <div class="marker4"  data-title="Воркутинская опорная зона">
+        <img src="img/marker.png">
+        <p>4</p>
+    </div>
+    <div class="marker5"  data-title="Ямало-Ненецкая опорная зона">
+        <img src="img/marker.png">
+        <p>5</p>
+    </div>
+    <div class="marker6"  data-title="Таймыро-Туруханская опорная зона">
+        <img src="img/marker.png">
+        <p>6</p>
+    </div>
+    <div class="marker7"  data-title="Северо-Якутская опорная зона">
+        <img src="img/marker.png">
+        <p>7</p>
+    </div>
+    <div class="marker8"  data-title="Чукотская опорная зона">
+        <img src="img/marker.png">
+        <p>8</p>
+    </div>
+</div>
+
+
+<div class="command">
+    <h1><a name="command"> НАША КОМАНДА </a></h1>
+    <div class="rowone">
+        <div class="people">
+            <img src="img/arina.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+        <div class="people">
+            <img src="img/sofa.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+        <div class="people">
+            <img src="img/me.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+        <div class="people">
+            <img src="img/ivan.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+        <div class="people">
+            <img src="img/bogdan.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+        <div class="people">
+            <img src="img/kapa.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+        <div class="people">
+            <img src="img/sofa.jpg">
+            <h3>Должность</h3>
+            <p>Описание</p>
+        </div>
+    </div>
+</div>
+<div>
+</div>
+<footer class="footer">
+    <div class="text">АДРЕС: АКАДЕМИКА КИРЕНСКОГО 26А</div>
+    <div class="text2">+7(999)999-99-99</div>
+    <div class="soc">
+        <img src="img/soc.png" width="25" height="25">
+        <img src="img/soc (1).png" width="25" height="25">
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 
 </body>
 </html>

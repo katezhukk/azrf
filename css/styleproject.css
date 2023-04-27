@@ -1,17 +1,14 @@
 body {
-    max-width: 100%;
+    margin: 0;
     overflow-x: hidden;
 }
-
 .rus {
     color: #033C4E;
 }
 
 .regform {
     display: flex;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .fed {
@@ -57,6 +54,76 @@ body {
 .btn5 img {
     width: 5vw;
 }
+.btndata{
+    margin-top: 2%;
+    color: white;
+    border-width: 0;
+    border-radius: 3px;
+    font-family: Montserrat-SemiBoldItalic;
+    background-color: #C20000;
+}
+.carousel-control-next, .carousel-control-prev{
+    background-color: #114E6C;
+    border-width: 0;
+}
+.fon{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #114E6C;
+}
+.information{
+    box-shadow: 7px 5px 30px #033C3E;
+    display: flex;
+    height: 500px;
+    max-width: 900px;
+    margin: 7% auto;
+}
+.texttopicture{
+    position: relative;
+    height: 100%;
+    background-color:  #033C4E;
+    width: 40%;
+}
+.picturetotext{
+    height: 100%;
+    width: 60%;
+}
+.texttopicture h1, .texttopicture p{
+    padding-left: 20%;
+    margin: auto;
+    color: #ececf6;
+    position: absolute;
+}
+.texttopicture h1{
+    text-transform: uppercase;
+    font-family: Montserrat-SemiBoldItalic;
+    padding-top: 10%;
+}
+.texttopicture p{
+    font-family: Montserrat-MediumItalic;
+    padding-top: 40%;
+}
+.picturetotext img{
+    height: 100%;
+    width: 100%;
+}
+
+.btn1, .btn2{
+    margin-top: 90%;
+    position: absolute;
+    padding: 0;
+    border-style: none;
+    font-family: Montserrat-SemiBoldItalic;
+    width: 35%;
+    height: 10%;
+}
+.btn1{
+    margin-left: 10%;
+}
+.btn2{
+    margin-left: 50%;
+}
 
 .database {
     padding-left: 10%;
@@ -65,40 +132,25 @@ body {
 .zagolovok {
     padding-top: 20vh;
     padding-left: 10%;
+    padding-right: 40vw;
 
 }
 
-.zagolovok h1, .zagolovokdb h1 {
-    font: 54px Montserrat-SemiBoldItalic;
+.zagolovok h1, .strategypage h1 {
+    font-family: Montserrat-SemiBoldItalic;
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
     text-align: left;
     color: #033C4E;
-}
-
-header {
-    min-height: 500px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .top {
     z-index: 2;
     position: absolute;
-    top: 24px;
     width: 100%;
     text-align: center;
 }
 
-.top1 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    top: 24px;
-    width: 100%;
-    text-align: center;
-}
-
-.top a, .top1 a {
+.top a{
     padding-right: 30px;
     font: 18px Montserrat-MediumItalic;
     text-decoration: none;
@@ -110,10 +162,11 @@ a:hover {
     color: #C20000;
 }
 
-.content .database {
+.zagolovok h2{
     padding-top: 15px;
     text-align: left;
-    font: 20px Montserrat-SemiBoldItalic;
+    font-family: Montserrat-SemiBoldItalic;
+    font-size: calc(16px + 8 * ((100vw - 320px) / (1280 - 320)));
     color: #033C4E;
     text-decoration: none;
     text-transform: uppercase;
@@ -125,30 +178,21 @@ a:hover {
     padding-bottom: 60px;
 }
 
-.aboutus h1 {
-    font: 54px Montserrat-SemiBoldItalic;
-    color: #033C4E;
-    padding-top: 25px;
-}
-
-.aboutus p {
-    font: 20px Montserrat-MediumItalic;
-    padding-top: 35px;
+.aboutus p, .aboutarctic p {
+    font-family: Montserrat-MediumItalic;
+    font-size: calc(10px + 5 * ((100vw - 320px) / (1280 - 320)));
+    text-align: center;
     color: #525252;
-    padding-right: 100px;
-}
+    padding-top: 5%;
 
-.strelka {
-    padding-left: 240px;
-    padding-top: 40px;
 }
-
+.aboutarctic h1, .page2 h1{
+    text-transform: uppercase;
+    font-family:  Montserrat-SemiBoldItalic;
+    font-size: calc(16px + 8 * ((100vw - 320px) / (1280 - 320)));
+}
 .decor {
     padding-top: 20px;
-}
-
-.picture img {
-    width: 100%;
 }
 
 .arctic {
@@ -164,10 +208,6 @@ a:hover {
     background-color: #033C4E;
 }
 
-.animation {
-    max-width: 300px;
-}
-
 .map {
     padding-top: 30px;
 }
@@ -175,29 +215,10 @@ a:hover {
 .map h1 {
     color: #033C4E;
     margin: 0;
-    font: 44px Montserrat-SemiBoldItalic;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 
-}
-
-.map h2 {
-    font: 30px Montserrat-SemiBoldItalic;
-    color: #033C4E;
-    text-align: center;
-}
-
-.map p {
-    font: 13px Montserrat-MediumItalic;
-    color: #033C4E;
-}
-
-.zone {
-}
-
-.zone p {
-    margin: 0;
 }
 
 .strategy {
@@ -217,42 +238,32 @@ a:hover {
 
 }
 
-.register {
-    width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .strategypage {
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
     background-image: url(../img/forest.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.register h1 {
-    padding-top: 0;
-    font: 24px Montserrat-SemiBoldItalic;
+.page2 h1 {
+    margin: auto;
     color: white;
     text-align: center;
 }
-
-.zagolovokdb {
-    padding-top: 40vh;
+ .aboutus h1, .mapname h1, .command h1{
+    font-family: Montserrat-SemiBoldItalic;
+     font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+    padding-top: 58px;
+    text-align: center;
+    color: #033C4E;
+}
+.strategypage h1 {
+    padding-top: 30vh;
     display: flex;
     justify-content: center;
-}
-
-input[type=text], input[type=password] {
-    width: 415px;
-    height: 56px;
-    padding: 10px;
-    margin-left: 350px;
-    margin-top: 30px;
-    display: flex;
-    border: none;
-    background: #f1f1f1;
 }
 
 input[type=password] {
@@ -268,11 +279,6 @@ input[type=text]:focus, input[type=password]:focus {
     outline: none;
 }
 
-.reg {
-    padding-left: 159px;
-    padding-right: 267px;
-}
-
 .command {
     background-size: 60vw;
     background-position-x: right;
@@ -281,19 +287,6 @@ input[type=text]:focus, input[type=password]:focus {
     padding-bottom: 20px;
     margin-bottom: 0;
 }
-
-.command h1 {
-    padding-top: 58px;
-    font: 40px Montserrat-SemiBoldItalic;
-    text-align: center;
-    color: #033C4E;
-}
-
-
-.pole {
-    align-items: center;
-}
-
 
 @font-face {
     font-family: "Montserrat-SemiBoldItalic";
@@ -307,18 +300,6 @@ input[type=text]:focus, input[type=password]:focus {
     src: url("../fonts/Montserrat-MediumItalic.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-}
-
-.calculator h1 {
-    font: 30px Montserrat-SemiBoldItalic;
-    color: #033C4E;
-    text-align: center;
-}
-
-legend {
-    padding-bottom: 15px;
-    font: 20px Montserrat-SemiBoldItalic;
-    color: #033C4E;
 }
 
 #root {
@@ -337,7 +318,7 @@ legend {
 }
 
 .rowone {
-    width: 60vw;
+    width: 85vw;
     margin: auto;
     text-align: center;
     padding-right: 15px;
@@ -345,14 +326,11 @@ legend {
     margin-bottom: 15px;
 }
 
+
 #authorize_response {
     font: 15px Montserrat-SemiBoldItalic;
     color: white;
 }
-
-@media only screen and (max-width: 600px) {
-}
-
 
 .footer {
     padding-top: 50px;
@@ -361,15 +339,6 @@ legend {
     text-align: center;
     font: 12px Montserrat-SemiBoldItalic;
     color: white;
-}
-
-.text {
-    margin-top: 63px;
-    margin-bottom: 10px;
-}
-
-.soc {
-    padding-top: 10px;
 }
 
 .items {
@@ -400,6 +369,7 @@ legend {
 }
 
 .people h3, .people p {
+    font-size: 100%;
     text-align: center;
 }
 
@@ -423,24 +393,14 @@ legend {
     padding-top: 20px;
 }
 
-.btn {
-    color: white;
+input[type=text], input[type=password], .btn {
+    width: 100%;
+    height: 5%;
     padding: 16px 20px;
     margin: 5px auto 22px auto;
-    border: none;
-    width: 250px;
-    text-transform: uppercase;
-    font: 15px Montserrat-SemiBoldItalic;
-    text-align: center;
-}
-
-input[type=text], input[type=password] {
-    width: 250px;
-    padding: 15px;
-    margin: 2px auto 15px auto;
     display: flex;
     border: none;
-    background: #f1f1f1;
+    font: 15px Montserrat-SemiBoldItalic;
 }
 
 .map {
@@ -540,6 +500,7 @@ div.tab-frame label {
     color: white;
     font-family: Montserrat-SemiBoldItalic;
     text-align: center;
+    margin: 0;
 }
 
 div.tab-frame input:checked + label {
@@ -548,7 +509,8 @@ div.tab-frame input:checked + label {
     background-color: #C20000;;
     width: 50%;
     color: white;
-    cursor: default
+    cursor: default;
+    margin: 0;
 }
 
 div.tab-frame div.tab11, div.tab-frame div.tab22 {
@@ -563,12 +525,9 @@ div.tab-frame input:nth-of-type(2):checked ~ .tab22:nth-of-type(2) {
 }
 
 .tab11, .tab22 {
-    font-family: Montserrat-SemiBoldItalic;
-}
-
-.tab11, .tab22 {
+    position: relative;
     width: 100vw;
-    height: 70vh;
+    height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -585,57 +544,31 @@ div.tab-frame input:nth-of-type(2):checked ~ .tab22:nth-of-type(2) {
     background-color: white;
     border-radius: 8px;
     box-shadow: 7px 5px 30px black;
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    margin-top: 8vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .aboutarctic h1 {
-    padding-top: 10%;
-    color: black;
+    padding-top: 5%;
     text-align: center;
-    font-family: Montserrat-SemiBoldItalic;
+    color: black;
 }
 
 .aboutarctic p {
     color: #494f54;
-    width: 70%;
-    text-align: center;
     margin: auto;
-    padding-top: 2vh;
-    font: 15px Montserrat-SemiBoldItalic;
-}
-
-@media only screen and (min-width: 840px) {
-    #register_response {
-        padding-right: 50px;
-    }
+    padding-bottom: 5%;
+    width: 70%;
 }
 
 @media only screen and (max-width: 840px) {
-    .aboutus h1 {
-        font-size: 24px;
-        padding-top: 15px;
-        text-align: center;
-        padding-left: 0;
-    }
 
-    .page3 h1 {
-        font-size: 30px;
-    }
-
-    .zone p {
-        font-size: 9px;
-    }
-
-    .zagolovokdb h1 {
-        font-size: 45px;
-    }
-
-    .register h1, .map h2, .map h1 {
-        font-size: 25px;
-    }
 
     header {
         display: flex;
@@ -647,101 +580,9 @@ div.tab-frame input:nth-of-type(2):checked ~ .tab22:nth-of-type(2) {
         display: none;
     }
 
-    .menu-triger {
-        display: block;
-        width: 25px;
-        height: 17px;
-        background: url(https://snipp.ru/demo/449/menu.png) 0 0 repeat;
-        position: absolute;
-        left: 15px;
-        top: 28px;
-    }
-
-    .menu-close {
-        display: block;
-        width: 28px;
-        height: 28px;
-        background: url(https://snipp.ru/demo/449/close.png) 0 0 repeat;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        z-index: 100;
-    }
-
-    .menu-popup {
-        width: 25vw;
-        height: 100vh;
-        display: none;
-        background: #033C4E;
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 0;
-        box-sizing: border-box;
-        padding: 20px;
-        z-index: 9999;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    }
-
-    .menu-popup ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu-popup li {
-        list-style: none;
-        margin: 10px 0;
-        padding-right: 30px;
-    }
-
-    .menu-popup li a {
-        font-size: 13px;
-        font-family: "Arial";
-        color: rgb(255, 255, 255);
-        line-height: 1.4;
-        text-decoration: none;
-    }
-
-    .body_pointer * {
-        cursor: pointer;
-    }
-
-    .aboutus p {
-        font-size: 13px;
-        padding-left: 20px;
-        padding-right: 0;
-        padding-top: 5px;
-    }
-
-    .picture img {
-        height: 442px;
-    }
-
     .decor img {
         padding-top: 10px;
         width: 75px;
-    }
-
-    .reg img {
-        width: 100px;
-    }
-
-    .decor {
-        padding-top: 10px;
-    }
-
-    .regform {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .register {
-        padding-top: 25px;
-        padding-bottom: 0;
-    }
-
-    .zones p {
-        font-size: 7px;
     }
 
     .buttons {
@@ -749,109 +590,33 @@ div.tab-frame input:nth-of-type(2):checked ~ .tab22:nth-of-type(2) {
     }
 
 }
-
+.picture img{
+    max-width: 100%;
+}
 @media only screen and (max-width: 450px) {
-    .aboutus h1, .aboutus h1, .calculator h1 {
-        font-size: 18px;
-        padding-top: 8px;
-        padding-left: 0;
-    }
-
-    .register h1, .map h2 {
-        font-size: 14px;
-    }
-
-    .content .owl-carousel .item.item-2 h1, .zagolovok h1, .zagolovokdb h1 {
-        font-size: 27px;
-    }
-
-    .content .owl-carousel .item.item-2 h2, .content .owl-carousel .item.item-1 h2, .map h1 {
-        font-size: 20px;
-    }
-
-    .arcticbtn, .sibbtn {
-        max-width: 100%;
-    }
-
-    .card {
-        font-size: 10px;
-    }
-
-    .aboutus p {
-        font-size: 9px;
-        padding-left: 10px;
-        padding-right: 0;
-        padding-top: 5px;
-    }
-
-    .top a {
-        font-size: 14px;
-        text-align: center;
-        padding-right: 10px;
-    }
 
     .picture img {
         height: 342px;
     }
-
+    .people img {
+        width: 20vw;
+    }
     .decor img {
         width: 50px;
     }
-
-
+.picture{
+    text-align: center;
+}
+.rowone{
+    display: flex;
+    overflow: auto;
+}
     .decor {
         padding-top: 5px;
     }
 
     .content .arrow-swipe {
         display: none;
-    }
-
-    .btn {
-        height: 3vh;
-        font-size: 10px;
-    }
-
-    .page3 {
-        grid-row-gap: 12px;
-        padding: 0;
-        background-color: #063F5B;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 5vh 50vh 35vh 35vh;
-        grid-template-areas:"p"
-                            "verticalimg"
-                            "pic1"
-                            "pic2"
-
-    }
-
-    .page3 h1, .command h1 {
-        font-size: 30px;
-        margin-top: 12px;
-    }
-
-    .top1 a, .people p {
-        font-size: 9px;
-        padding-right: 2px;
-    }
-
-    .verticalimg img {
-        height: 50vh;
-        width: 100%;
-    }
-
-    .people {
-        height: auto;
-        width: auto;
-    }
-
-    .people h3 {
-        font-size: 14px;
-    }
-
-    .people img {
-        width: 25vw;
     }
 
 }
